@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#install
+sudo apt-get -qq install zsh > /dev/null
+
+#oh-my-zsh
+wget -q --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh > /dev/null 
+
+#setup as default shell
+echo "Please execute to have zsh as default shell: chsh -s /bin/zsh"

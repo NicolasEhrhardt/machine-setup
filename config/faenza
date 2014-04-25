@@ -1,0 +1,3 @@
+sudo add-apt-repository --yes ppa:tiheum/equinox > /dev/null
+sudo apt-get update > /dev/null
+sudo apt-get install faenza-icon-theme > /dev/null

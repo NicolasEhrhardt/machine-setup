@@ -1,0 +1,15 @@
+#!/bin/bash
+
+dirInstall=~/.install/
+dirConfig=${dirInstall}config/
+pathConfig=${dirInstall}select.cfg
+
+#for all folders that are in the config
+while read line
+do
+if [ -e ${dirConfig}${line} ]
+then
+  echo "Installing $line..."
+  sh ${dirConfig}${line}
+fi
+done < $pathConfig

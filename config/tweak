@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo add-apt-repository ppa:freyja-dev/unity-tweak-tool-daily > /dev/null
+sudo apt-get update > /dev/null
+sudo apt-get install unity-tweak-tool > /dev/null

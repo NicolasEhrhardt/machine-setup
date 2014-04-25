@@ -1,0 +1,11 @@
+#!/bin/bash
+sudo apt-get install vim vim-gtk > /dev/null
+
+#font for powerline
+sudo apt-get -qq install python-fontforge > /dev/null
+python ~/.vim/bundle/vim-powerline/fontpatcher/fontpatcher ~/.vim/bundle/vim-powerline/fontpatcher/PowerlineSymbols.sfd
+mkdir -p ~/.fonts
+cp PowerlineSymbols-Powerline.otf ~/.fonts/
+
+# lib for xml format
+sudo apt-get -qq install libxml2-utils
